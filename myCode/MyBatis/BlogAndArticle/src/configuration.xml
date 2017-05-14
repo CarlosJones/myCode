@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration     
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"     
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+  <typeAliases>  
+    <!-- 给实体类去一个别名  -->  
+        <typeAlias type="com.mybatis.model.Blog" alias="Blog"/>   
+        <typeAlias type="com.mybatis.model.Post" alias="Post"/>  
+  </typeAliases>  
+    
+  <!-- 数据源配置，这里用MySQL数据库 -->  
+  <environments default="development">  
+     <environment id="development">  
+         <transactionManager type="JDBC"/>  
+         <dataSource type="POOLED">  
+               <property name="driver" value="com.mysql.jdbc.Driver"/>  
+               <property name="url" value="jdbc:mysql://127.0.0.1:3306/blog"/>  
+               <property name="username" value="root"/>  
+               <property name="password" value="root"/>  
+         </dataSource>  
+     </environment>  
+  </environments>  
+    
+  <mappers>  
+        <mapper resource="com/mybatis/model/blog.xml"/>  
+  </mappers>  
+</configuration> 

@@ -1,0 +1,6 @@
+package com.BrokerAndStock;
+
+public interface Order {
+	public void buy();
+	public void sell();
+}

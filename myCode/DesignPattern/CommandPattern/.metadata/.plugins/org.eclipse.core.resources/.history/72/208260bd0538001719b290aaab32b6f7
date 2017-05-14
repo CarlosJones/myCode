@@ -1,0 +1,21 @@
+package com.BrokerAndStock;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Broker {
+	private List<Order> orderlist = new ArrayList<Order>();
+	private Iterator<Order> iterator = orderlist.iterator();
+	
+	public void takeOrder(Order order){
+		orderlist.add(order);
+	}
+	public void placeOrder(){
+		
+		if(iterator.hasNext()){
+			Order order = (Order) iterator.next();
+			order.execute();
+		}
+	}
+}

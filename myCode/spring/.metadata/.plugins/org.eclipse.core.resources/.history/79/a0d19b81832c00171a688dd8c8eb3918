@@ -1,0 +1,16 @@
+package com.springCustomEvent;
+
+import org.springframework.context.ApplicationEvent;
+
+@SuppressWarnings("serial")
+public class CustomEvent extends ApplicationEvent{
+
+	public CustomEvent(Object source) {
+		super(source);
+	}
+	
+	public String toString(){
+		System.out.println("My Spring Custom Event.");
+		return "My Spring Custom Event.";
+	}
+}

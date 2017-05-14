@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.learning.DAO.ICutomerDao">
+	<resultMap id="customerMapper" type="com.learnin.Entities.Customer">
+		<id property="customerID" column="customer_id"/>
+		<result property="customerName" column="customer_name"/>
+		<result property="createTime" column="create_time"/>
+		<association property="user" resultMap="com.learning.DAO.IUserDao.userMap">
+		</association>
+	</resultMap>
+	<select id="getBy" parameterType="int" 
+		resultMap="customerMapper">
+		select 
+			c.customer_name,c.create_time,c.customer_id,
+			u.user_name,u.user_password,u.is_valid
+		from
+			customer c left outer join sys_user u
+			on c.user_id=u.user_id
+		where
+			c.customer_id=#{id}
+	</select>
+</mapper>

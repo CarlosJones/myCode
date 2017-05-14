@@ -1,0 +1,17 @@
+package com.Autowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class TextEdit {
+	@Autowired
+	private SpellChecker spellChecker;
+
+	public SpellChecker getSpellChecker() {
+		return spellChecker;
+	}
+	
+	
+	public void spellCheck(){
+		spellChecker.checkSpelling();
+	}
+}

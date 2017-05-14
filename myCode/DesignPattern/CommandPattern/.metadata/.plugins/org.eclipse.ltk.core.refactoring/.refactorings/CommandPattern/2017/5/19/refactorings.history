@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.orderAndStock&apos; to &apos;com.BrokerAndStock&apos;&#x0A;- Original project: &apos;CommandPattern&apos;&#x0A;- Original element: &apos;CommandPattern/src/com.orderAndStock&apos;&#x0A;- Renamed element: &apos;CommandPattern/src/com.BrokerAndStock&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.orderAndStock&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.orderAndStock" name="com.BrokerAndStock" qualified="false" references="true" stamp="1494696680008" textual="false" version="1.0"/>
+</session>
