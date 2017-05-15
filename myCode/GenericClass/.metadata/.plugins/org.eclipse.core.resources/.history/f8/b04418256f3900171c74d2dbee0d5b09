@@ -1,0 +1,17 @@
+package com.box;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+@SuppressWarnings("deprecation")
+public class BoxTest {
+
+	@Test
+	public void test() {
+		Box<String> box = new Box<String>("Hello");
+		String data = box.getData();
+		assertEquals("正确的结果", "Hello1",data);
+	}
+
+}

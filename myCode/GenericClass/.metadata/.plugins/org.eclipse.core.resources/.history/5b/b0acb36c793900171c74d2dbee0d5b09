@@ -1,0 +1,13 @@
+package com.map;
+
+import org.junit.Test;
+
+public class MapTest {
+
+	@Test
+	public void test() {
+		Map<?,?> map = new Map<String,Object>();
+		map.add("1", (Object)"第一个");
+	}
+
+}
