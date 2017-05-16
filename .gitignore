@@ -1,2 +1,3 @@
-/myCode/SSM/RemoteSystemsTempFiles
-/myCode/SSM/Servers
+myCode/*/RemoteSystemsTempFiles
+myCode/*/Servers
+myCode/*/.metadate/
