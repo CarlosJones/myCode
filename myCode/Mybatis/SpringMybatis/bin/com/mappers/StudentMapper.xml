@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper	namespace="com.daos.StudentMapperDao">
+	<resultMap id="studentResultMap" type="com.entities.StudentEntity">
+		<id property="studentID" column="STUDENT_ID"></id>
+		<result property="studentName" column="STUDENT_NAME"/>
+		<result property="studentSex" column="STUDENT_SEX"/>
+		<result property="studentBirthday" column="STUDENT_BIRTHDAY"/>
+		<result property="studentClass" column="STUDENT_CLASS"/>
+	</resultMap>
+	
+	<select id="getStudent" parameterType="String" resultType="com.entities.StudentEntity" 
+		resultMap="studentResultMap">
+		<![CDATA[
+			SELECT * FROM STUDENT_TAL ST
+				WHERE ST.STUDENT_ID = #{studentID}
+		]]>
+	</select>
+	
+	<select id="getAllStudent" resultType="com.entities.StudentEntity" resultMap="studentResultMap">
+		<![CDATA[
+			SELECT * FROM STUDENT_TAL ST
+		]]>
+	</select>
+</mapper>
