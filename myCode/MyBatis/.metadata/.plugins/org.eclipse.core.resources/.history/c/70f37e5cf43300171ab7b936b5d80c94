@@ -1,8 +1,0 @@
-package com.learning.DAO;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface ICustomerDao1 {
-	public void getByID();
-}

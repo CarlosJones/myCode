@@ -1,5 +1,0 @@
-INDEX VERSION 1.127+/home/dingf/myCode/MyBatis/.metadata/.plugins/org.eclipse.jdt.core
-2276737562.index
-4256870066.index
-1478530209.index
-3011758960.index

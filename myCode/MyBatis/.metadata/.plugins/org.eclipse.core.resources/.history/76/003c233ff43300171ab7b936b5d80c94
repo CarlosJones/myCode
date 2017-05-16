@@ -1,5 +1,0 @@
-package com.learning.DAO;
-
-public interface ICustomerDao1 {
-
-}
