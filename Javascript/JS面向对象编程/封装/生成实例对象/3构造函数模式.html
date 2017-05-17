@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	//构造函数
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+	}
+	//对构造函数使用new运算符，就能生成实例，
+	//并且this变量会绑定在实例对象上
+	var cat1 = new Cat("大毛","黄色");
+	var cat2 = new Cat("二毛","黑色");
+	//这时cat1和cat2会自动含有一个constructor属性，
+	//指向它们的构造函数
+	alert(cat1.constructor == Cat);
+	alert(cat2.constructor == Cat);
+	//instanceof运算符，验证原型对象与实例对象之间的关系
+	alert(cat1 instanceof Cat);
+	alert(cat2 instanceof Cat);
+	//缺点，（JS没有jvm中的方法区）同一个类下的所有实例的方法和常量
+	//都会重复占用内存，占用太多内存。
+</script>
+</body>
+</html> 
