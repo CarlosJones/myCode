@@ -29,12 +29,21 @@
 		alert(5);
 	}
 
-	Foo.getName();	//2,Foo是什么
-	getName();	//4
-	Foo().getName();//1，Foo()是什么
-	new Foo.getName();//2
-	new Foo().getName();//3
-	new new Foo().getName();//3 new的是谁
+	Foo.getName();	//2,Foo是什么,构造函数Foo()既是函数，同时也是一个对象。Foo()是调用函数，Foo指的是这个对象本身。
+	getName();	//4,所有的全局属性，都是window对象的属性，其作用域是window对象内部。
+	Foo().getName();//1，Foo()函数执行，对getName属性赋值，getName的作用域，首先是Foo()函数内部声明。若没有，找全局变量声明。若无全局变量声明，则自动声明。不论有无，最后都会对getName进行赋值。
+			//对于window对象的函数内部的this，谁调用它，this就指向谁。此处，window对象调用了Foo()，返回window.
+			//此时，变成window.getName(),其中getName=function(){alert(1)}
+	getName();	//1
+	new Foo.getName();//2,.的运算等级最高，new (Foo.getName)()
+			  //Foo.getName()与Foo().getName()的区别，
+			  //Foo.getName()，首先，对象是Foo()构造函数这个对象，然后，该对象有getName这个属性.所谓的类方法，就是构造函数对象的方法。
+			   //Foo().getName()，链式法则，先执行Foo()函数，得到返回值，返回值执行getName()方法
+	new Foo().getName();//3，.的优先级高于new,new (Foo().getName)()
+			    //js的构造函数有返回值，若返回值是值类型，返回原来的对象。否则，返回引用对象。
+			    //this在构造函数中，指向新生成的对象，所以new Foo()返回新生成的匿名对象,调用改对象的getName()方法
+			     //此时关注两个作用域，Foo()函数内部作用域，window作用域。此时，调用的是Foo()继承自原型的属性。
+	new new Foo().getName();//3，.最优先，所以有new (new Foo()).getName() === new (Foo()的实例).getName() === new (Foo()的实例).getName)(),此时返回的对象是Foo.prototype.getName()函数实例化的对象。
 </script>
 </body>
 </html> 
