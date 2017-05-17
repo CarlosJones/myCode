@@ -1,0 +1,35 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(girlfriend){
+		var girlfriend = girlfriend;
+		function getGirlFriend(girlfriend){
+			return "我的女朋友"+girlfriend+"是美女";		
+		}
+		this.myname = "aaa";
+		this.age = 22;
+		this.do = function(){
+			return this.myname +"正在学习JS";
+		};
+		this.alertAge=function(){
+			this.changeAge();
+			alert(this.age);
+		};
+		this.alertGirlFriend=function(){
+			alert(getGirlFriend(girlfriend));
+		};	
+	}
+	User.prototype.changeAge = function(){
+		this.age = 29;
+	}
+	var user = new User("某某某");
+	user.alertAge();
+	user.alertGirlFriend();
+</script>
+</body>
+</html> 
