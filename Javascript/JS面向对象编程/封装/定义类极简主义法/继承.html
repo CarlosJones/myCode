@@ -1,0 +1,46 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var Animal = {
+			init:function(){
+					var animal = {};
+					animal.sleep = function(){
+						alert("睡懒觉");
+					}
+					return animal;
+				}
+		     };
+	var Cat = {
+			walk:"龙腾虎跃",//类似与java中的静态变量
+			init:function(){
+				var cat = Animal.init();
+				var sound = "喵喵喵"; //私有属性
+				cat.makesound = function(){
+					alert(sound);
+				}
+				cat.walking = function(){
+					alert(Cat.walk);
+				}
+				cat.changewalk = function(walk){
+					Cat.walk = walk;
+				}
+				return cat;
+			      }
+		  };
+	var cat1 = Cat.init();
+//	cat1.makesound();
+//	cat1.sleep();
+	//此时，Cat作为类存在，其中的属性就不可轻易改动了。生成的对象可以随意修改属性，方法。
+	var cat2 = Cat.init();
+	cat1.walking();
+	cat2.changewalk("走猫步");
+	cat1.walking();
+	
+</script>
+</body>
+</html> 
