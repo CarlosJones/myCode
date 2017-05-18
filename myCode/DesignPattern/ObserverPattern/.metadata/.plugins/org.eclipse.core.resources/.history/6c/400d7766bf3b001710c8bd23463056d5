@@ -1,0 +1,12 @@
+package com.event.test;
+
+import java.util.EventObject;
+
+public class MyEvent extends EventObject {
+	private Object object;
+
+	public MyEvent(Object eventSource) {
+		super(eventSource);
+		object = eventSource;
+	}
+}

@@ -1,0 +1,10 @@
+package com.event.test;
+
+import java.awt.Event;
+
+public class MyEvent extends Event {
+
+	public MyEvent(EventSource eventSource) {
+
+	}
+}

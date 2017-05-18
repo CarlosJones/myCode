@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LoggerTest (1)" project="TestLog4J" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.simpleTest.LoggerTest" time="0.012">
-    <testcase name="testUseProperties" classname="com.simpleTest.LoggerTest" time="0.002"/>
-    <testcase name="test" classname="com.simpleTest.LoggerTest" time="0.01"/>
-  </testsuite>
-</testrun>

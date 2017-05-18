@@ -1,0 +1,16 @@
+package com.event.door;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class DoorEventSource {
+	private Vector<IDoorListener> listeners = new Vector<IDoorListener>();
+	
+	public void addEventListener(IDoorListener l){
+		listeners.addElement(l); 
+	}
+	
+	public void notifyEvent(){
+		Enumeration<IDoorListener> listener = listeners.elements();
+	}
+}
