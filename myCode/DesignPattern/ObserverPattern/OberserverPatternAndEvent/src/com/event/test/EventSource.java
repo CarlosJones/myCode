@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class EventSource {
 	private Vector<ListenerDao> repository = new Vector<ListenerDao>();
-	ListenerDao ld;
+	private ListenerDao ld;
 	public EventSource(){}
 	public void addListener(ListenerDao l){
 		repository.addElement(l);

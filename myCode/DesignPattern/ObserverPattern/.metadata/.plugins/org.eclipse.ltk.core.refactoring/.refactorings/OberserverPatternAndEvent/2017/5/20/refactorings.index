@@ -2,3 +2,5 @@
 1495112641004	Extract interface 'IDoorListener'
 1495112692753	Copy compilation unit
 1495112744499	Rename type 'DoorSource'
+1495117468716	Encapsulate field 'action'
+1495118654945	Encapsulate field 'message'

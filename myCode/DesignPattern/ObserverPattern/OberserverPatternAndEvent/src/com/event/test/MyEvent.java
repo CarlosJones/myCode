@@ -1,13 +1,9 @@
 package com.event.test;
 
-import java.util.EventObject;
-
-@SuppressWarnings("serial")
-public class MyEvent extends EventObject {
+public class MyEvent{
 	private Object object;
 
 	public MyEvent(Object eventSource) {
-		super(eventSource);
 		object = eventSource;
 	}
 	
