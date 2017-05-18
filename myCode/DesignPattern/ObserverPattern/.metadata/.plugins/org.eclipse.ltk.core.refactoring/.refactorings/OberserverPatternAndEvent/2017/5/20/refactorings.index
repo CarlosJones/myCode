@@ -4,3 +4,7 @@
 1495112744499	Rename type 'DoorSource'
 1495117468716	Encapsulate field 'action'
 1495118654945	Encapsulate field 'message'
+1495145194000	Rename resource 'Class.cld'
+1495145223492	Move 'test.cld' to 'UML'
+1495145251773	Rename resource 'newfile.cld'
+1495145344630	Rename resource 'newfile.cld'
