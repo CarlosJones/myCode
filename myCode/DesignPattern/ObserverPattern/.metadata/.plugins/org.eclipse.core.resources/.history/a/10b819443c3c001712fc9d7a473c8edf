@@ -1,0 +1,15 @@
+package com.activeobject.test;
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月19日上午10:38:29
+ */
+public class TestAsyncCall implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

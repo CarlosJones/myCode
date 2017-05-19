@@ -1,0 +1,5 @@
+package com.activeobject.service;
+
+public class WeatherService {
+
+}

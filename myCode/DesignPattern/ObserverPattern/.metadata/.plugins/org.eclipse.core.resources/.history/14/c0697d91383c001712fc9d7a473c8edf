@@ -1,0 +1,11 @@
+package com.activeobject.entity;
+
+/**
+ *@Description:一个pojo类 
+ *@author:Carlos
+ *@time:2017年5月19日上午10:10:59
+ */
+public class WeatherData {
+	private String temperature;
+	
+}
