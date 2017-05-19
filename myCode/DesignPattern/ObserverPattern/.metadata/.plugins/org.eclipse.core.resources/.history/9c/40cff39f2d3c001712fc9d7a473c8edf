@@ -1,0 +1,7 @@
+package com.example.weatherStation;
+
+public interface ISubject {
+	public void registerObserver(IObserver O);
+	public void removeObserver(IObserver O);
+	public void notifyObservers(IObserver O);
+}

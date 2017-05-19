@@ -1,0 +1,20 @@
+package com.weatherStation.Impl;
+
+import com.weatherStation.Interface.DisplayElement;
+import com.weatherStation.Interface.Observer;
+
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(float temp, float humidity, float pressure) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
