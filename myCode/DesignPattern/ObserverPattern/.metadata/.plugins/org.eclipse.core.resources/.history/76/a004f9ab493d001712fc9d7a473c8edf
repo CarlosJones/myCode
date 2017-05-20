@@ -1,0 +1,15 @@
+package com.multithread.service;
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:46:55
+ */
+public class ServiceThread implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

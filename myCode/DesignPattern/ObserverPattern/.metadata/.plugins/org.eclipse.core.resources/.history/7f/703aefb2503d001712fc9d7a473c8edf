@@ -1,0 +1,37 @@
+package com.multithread.service;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+import com.activeobject.entity.WeatherData;
+import com.multithread.client.WeatherClient;
+
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:46:55
+ */
+public class ServiceThread implements Runnable {
+
+	private Vector<WeatherClient> vector = new Vector<WeatherClient>();
+	private WeatherClient c = null;
+	
+	public void addCliend(WeatherClient client){
+		vector.addElement(client);  
+	}
+	
+	public void notifyClient(WeatherData wData){
+		Enumeration<WeatherClient> enumx = vector.elements();
+		while(enumx.hasMoreElements()){
+			c = enumx.nextElement();
+			c.getData(wData);
+		}
+	}
+	public void run() {
+
+	}
+
+	public void getWeatherInfo(){
+		System.out.println("WeatherService service...");
+	}
+}

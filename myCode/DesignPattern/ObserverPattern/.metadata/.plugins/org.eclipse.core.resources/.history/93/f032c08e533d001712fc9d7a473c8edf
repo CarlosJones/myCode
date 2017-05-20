@@ -1,0 +1,31 @@
+package com.multithread.client;
+
+import com.activeobject.entity.WeatherData;
+import com.multithread.service.ServiceThread;
+
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:58:55
+ */
+public class WeatherClient implements Runnable{
+
+	public void getData(WeatherData wData) {
+		System.out.println("Client get Weather Data.");
+		System.out.println("气温:"+wData.getTemperature());
+	}
+
+	public void run() {
+		ServiceThread service = new ServiceThread();
+		service.getWeatherInfo(this);
+		for(int i=0;i<=100;i++){
+			System.out.println("client counting:"+i);
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}
