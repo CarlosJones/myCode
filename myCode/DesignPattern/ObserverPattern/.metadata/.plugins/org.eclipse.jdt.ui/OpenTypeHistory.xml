@@ -2,4 +2,10 @@
 <typeInfoHistroy>
 <typeInfo handle="=OberserverPatternAndEvent/src&lt;com.event.test{ListenerDao.java[ListenerDao" modifiers="513" timestamp="1495107861000"/>
 <typeInfo handle="=OberserverPatternAndEvent/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.util(EventObject.class[EventObject" modifiers="33" timestamp="1492744583000"/>
+<typeInfo handle="=WeatherStation/src&lt;com.weatherStation.Interface{Subject.java[Subject" modifiers="513" timestamp="1495155285000"/>
+<typeInfo handle="=WeatherStation/src&lt;com.weatherStation.Interface{Observer.java[Observer" modifiers="513" timestamp="1495155285000"/>
+<typeInfo handle="=WeatherStation/src&lt;com.weatherStation.Interface{DisplayElement.java[DisplayElement" modifiers="513" timestamp="1495155285000"/>
+<typeInfo handle="=Weather/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1492744583000"/>
+<typeInfo handle="=Weather/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1492744583000"/>
+<typeInfo handle="=Weather/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1492744583000"/>
 </typeInfoHistroy>

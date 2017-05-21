@@ -1,0 +1,18 @@
+package com.simpleTest;
+
+public class DoSomething implements Runnable{
+	private String name;
+//	private Integer i = 0;
+    public DoSomething(String name) {
+        this.name = name;
+    }
+
+    public void run() {
+    	int i = 0;
+        while(i<15) {
+        	i++;
+            System.out.println(name + ": " + i +Thread.currentThread().getName());
+        }
+    } 
+
+}

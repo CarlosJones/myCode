@@ -1,7 +1,5 @@
 package com.multithread.service;
 
-import com.activeobject.entity.WeatherData;
-
 /**
  *@Description:TODO 
  *@author:Carlos
