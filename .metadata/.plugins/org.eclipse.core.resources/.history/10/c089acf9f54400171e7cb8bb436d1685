@@ -1,0 +1,9 @@
+package com.producerConsumer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Plate {
+	List<Object> eggs = new ArrayList<Object>();
+	
+}

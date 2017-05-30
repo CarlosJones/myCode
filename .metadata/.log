@@ -1,0 +1,822 @@
+!SESSION 2017-05-29 22:23:59.960 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 0 2017-05-29 22:24:04.357
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.ide.eclipse.as.wtp.core [1005]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.foundation.core [1019]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common 4 0 2017-05-29 22:24:04.447
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common [1007]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common.core [1008]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.foundation.core [1019]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.core 4 0 2017-05-29 22:24:04.483
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.core [1008]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.foundation.core [1019]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.el.core 4 0 2017-05-29 22:24:04.495
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.el.core [1009]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.resref.core; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.resref.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common.resref.core [1013]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common [1007]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.common.core [1008]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                            org.jboss.tools.foundation.core [1019]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model 4 0 2017-05-29 22:24:04.525
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model [1010]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model.ui 4 0 2017-05-29 22:24:04.535
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model.ui [1011]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common.model [1010]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common [1007]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.common.core [1008]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                            org.jboss.tools.foundation.core [1019]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.resref.core 4 0 2017-05-29 22:24:04.546
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.resref.core [1013]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.ext 4 0 2017-05-29 22:24:04.556
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.ext [1014]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common.model [1010]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common [1007]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.common.core [1008]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                            org.jboss.tools.foundation.core [1019]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.xml 4 0 2017-05-29 22:24:04.566
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.xml [1015]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.ui 4 0 2017-05-29 22:24:04.592
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.ui [1016]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.validation 4 0 2017-05-29 22:24:04.687
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.validation [1017]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2017-05-29 22:24:04.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.core [1019]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.ui 4 0 2017-05-29 22:24:04.732
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.ui [1020]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.foundation.core [1019]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml 4 0 2017-05-29 22:24:04.734
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml [1035]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common [1007]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common.core [1008]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.foundation.core [1019]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml.ui 4 0 2017-05-29 22:24:04.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml.ui [1036]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.common.model [1010]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.common [1007]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.0.Final-v20150924-2213-B38"; singleton:="true"
+                     org.jboss.tools.common.core [1008]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+                            org.jboss.tools.foundation.core [1019]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.runtime.core 4 0 2017-05-29 22:24:04.736
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.runtime.core [1037]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.foundation.core [1019]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.runtime.ui 4 0 2017-05-29 22:24:04.736
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.runtime.ui [1038]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.runtime.core
+    -> Bundle-SymbolicName: org.jboss.tools.runtime.core; bundle-version="3.1.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.runtime.core [1037]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.foundation.core [1019]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.wtp.runtimes.tomcat 4 0 2017-05-29 22:24:04.737
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.wtp.runtimes.tomcat [1040]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.runtime.core; bundle-version="2.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.runtime.core; bundle-version="3.1.0.Final-v20150924-2213-B38"; singleton:="true"
+       org.jboss.tools.runtime.core [1037]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.0.Final-v20150924-2213-B38"; singleton:="true"
+              org.jboss.tools.foundation.core [1019]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-05-29 22:25:23.235
+!MESSAGE InstanceProcess.disposeInstances(): registration for component org.eclipse.epp.mpc.ui.marketplace-client is already disposed! 
+
+!ENTRY org.eclipse.osgi 4 0 2017-05-29 22:25:23.371
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+Root exception:
+java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-05-29 22:25:23.433
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in org.eclipse.epp.mpc.ui was unable to load class org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 11 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 21 more
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-05-29 22:25:23.433
+!MESSAGE Plug-in org.eclipse.epp.mpc.ui was unable to load class org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 21 more
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-05-29 22:25:23.433
+!MESSAGE Plug-in org.eclipse.epp.mpc.ui was unable to load class org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 21 more
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+
+!ENTRY org.eclipse.ui 4 4 2017-05-29 22:25:23.433
+!MESSAGE Unhandled Exception
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2017-05-29 22:25:23.433
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in org.eclipse.epp.mpc.ui was unable to load class org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 11 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 21 more
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-05-29 22:25:23.433
+!MESSAGE Plug-in org.eclipse.epp.mpc.ui was unable to load class org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.epp.mpc.ui (306).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start() of bundle org.eclipse.epp.mpc.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 21 more
+Caused by: java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.<init>(ResourceProvider.java:182)
+	at org.eclipse.epp.internal.mpc.ui.MarketplaceClientUiPlugin.start(MarketplaceClientUiPlugin.java:97)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	... 28 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-29 22:25:30.957
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2017-05-29 22:26:54.940
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.io.IOException: 系统找不到指定的路径。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.downloadRemoteIndex(ProblemsDatabaseUpdateJob.java:109)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.browser 2 0 2017-05-29 22:28:22.189
+!MESSAGE Internal browser is not available: No more handles
+
+!ENTRY org.eclipse.ui 2 2 2017-05-29 22:28:24.548
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2017-05-29 22:58:24.310
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre7\lib\charsets.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre7\lib\jce.jar
+  [+] C:\Program Files\Java\jre7\lib\jfr.jar
+  [+] C:\Program Files\Java\jre7\lib\jsse.jar
+  [+] C:\Program Files\Java\jre7\lib\resources.jar
+  [+] C:\Program Files\Java\jre7\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:172)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:128)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2017-05-29 23:11:42.609
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre7\lib\charsets.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre7\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre7\lib\jce.jar
+  [+] C:\Program Files\Java\jre7\lib\jfr.jar
+  [+] C:\Program Files\Java\jre7\lib\jsse.jar
+  [+] C:\Program Files\Java\jre7\lib\resources.jar
+  [+] C:\Program Files\Java\jre7\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:172)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:128)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

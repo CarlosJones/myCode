@@ -1,0 +1,11 @@
+package com.sellTicket;
+
+public class SellTicket implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

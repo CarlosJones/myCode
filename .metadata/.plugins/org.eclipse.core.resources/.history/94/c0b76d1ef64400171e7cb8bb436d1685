@@ -1,0 +1,19 @@
+package com.producerConsumer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Plate {
+	List<Object> eggs = new ArrayList<Object>();
+	public synchronized Object getEgg(){
+		while(eggs.size() == 0){
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		Object egg = eggs.get(0);
+		return egg;
+	}
+}

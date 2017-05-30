@@ -1,0 +1,13 @@
+package com.test;
+
+import java.util.concurrent.*;
+import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Executorservice2 {
+	public static void main(String[] args) {
+		ExecutorService pool = Executors.newCachedThreadPool();
+		CompletionService<Integer> cs = new ExecutorCompletionService<Integer>(pool);
+	}
+}

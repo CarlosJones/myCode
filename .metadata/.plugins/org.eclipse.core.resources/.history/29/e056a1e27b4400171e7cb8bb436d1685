@@ -1,0 +1,5 @@
+package com.deadlock;
+
+public class DeadLock extends Thread {
+
+}

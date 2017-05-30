@@ -1,0 +1,8 @@
+package com.deadlock;
+
+public class DeadLock extends Thread {
+	private boolean flag;
+	public DeadLock(boolean flag){
+		this.flag = flag;
+	}
+}
