@@ -1,0 +1,3 @@
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Monospace|11.0|0|GTK|1|;

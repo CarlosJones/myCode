@@ -1,0 +1,45 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+	}
+	Cat.prototype.type = "猫科动物";
+	Cat.prototype.eat = function(){
+		alert("吃老鼠");
+	}
+	var cat1 = new Cat("大毛","黄色");
+	var cat2 = new Cat("二毛","黑色");
+	//1.isPrototypeOf()
+	//判断某个prototype对象和某个实例对象之间的关系
+	alert(Cat.prototype.isPrototypeOf(cat1));
+	alert(Cat.prototype.isPrototypeOf(cat2));
+
+	//2.hasOwnProperty()
+	//每个实例对象都有一个hasOwnProperty()方法，用来
+	//判断某一个属性是本地属性还是继承自prototype对象的属性
+	alert(cat1.hasOwnProperty("name"));
+	alert(cat1.hasOwnProperty("type"));
+	//对象->构造函数->原型(prototype)
+	//构造函数是对象，构造函数有构造函数，是什么？
+	//原型是对象，原型有构造函数，是什么？
+	//怎样闭合的？
+	
+	//3.in运算符
+	//a.in用来判断某个实例是否含有某个属性
+	alert("name" in cat1);
+	alert("type" in cat1);
+	//b.in还可以用来遍历某个对象的所有属性
+	for(var prop in cat1){
+		alert("cat1["+prop+"]="+cat1[prop]);
+	}
+	//这在java中要使用反射才能做到
+</script>
+</body>
+</html> 

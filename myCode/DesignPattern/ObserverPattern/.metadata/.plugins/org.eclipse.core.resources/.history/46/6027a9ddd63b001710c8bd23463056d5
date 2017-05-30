@@ -1,0 +1,9 @@
+package com.event.button;
+
+public class doubleClickHandler implements IEventListener {
+
+	public void handleEvent(Event e) {
+
+	}
+
+}

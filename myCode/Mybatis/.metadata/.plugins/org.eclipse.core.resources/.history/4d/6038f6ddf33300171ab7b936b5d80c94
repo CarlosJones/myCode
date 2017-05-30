@@ -1,0 +1,26 @@
+package com.learning.Test;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.learning.DAO.ICustomerDao;
+import com.learning.Entities.Customer;
+import com.learning.Entities.User;
+
+@RunWith(value=SpringJUnit4ClassRunner.class)
+@ContextConfiguration(value="classpath:spring.xml")
+public class CustomerTest {
+	@Autowired
+	private ICustomerDao iCustomer;
+	@Test
+	public void customerTest(){
+		System.out.println(iCustomer.getClass());
+		Customer customer = iCustomer.getBy(1);
+		System.out.println(customer.getCustomerName());
+		User user = customer.getUser();
+		System.out.println(user.getUserName());
+	}
+}

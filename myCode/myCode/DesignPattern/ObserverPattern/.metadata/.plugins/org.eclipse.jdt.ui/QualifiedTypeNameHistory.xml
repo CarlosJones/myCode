@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.Event"/>
+<fullyQualifiedTypeName name="java.util.EventObject"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.weatherStation.Interface.Subject"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.util.Enumeration"/>
+<fullyQualifiedTypeName name="com.multithread.service.QueryServiceThread"/>
+<fullyQualifiedTypeName name="com.activeobject.service.WeatherService"/>
+<fullyQualifiedTypeName name="com.activeobject.entity.WeatherData"/>
+<fullyQualifiedTypeName name="com.multithread.client.WeatherClient"/>
+<fullyQualifiedTypeName name="com.multithread.service.ServiceThread"/>
+</qualifiedTypeNameHistroy>

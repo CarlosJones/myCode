@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="department" class="com.injectCollection.Department">
+    	<property name="name" value="财务部"></property>
+    	<property name="empName">
+    		<list>
+    			<value>小米</value>
+    			<value>小米小米</value>
+    			<value>小米小米小米</value>
+    		</list>
+    	</property>
+    	<property name="empList">
+    		<list>
+    			<ref bean="emp1"></ref>
+    			<ref bean="emp2"></ref>
+    			<ref bean="emp1"></ref>
+    		</list>
+    	</property>
+    	<property name="empSet">
+    		<set>
+    			<ref bean="emp1"></ref>
+    			<ref bean="emp1"></ref>
+    			<ref bean="emp1"></ref>
+    		</set>
+    	</property>
+    	<property name="empMap">
+    		<map>
+    			<entry key="one" value-ref="emp1"></entry>
+    			<entry key="two" value-ref="emp2"></entry>
+    			<entry key="three" value-ref="emp2"></entry>
+    		</map>
+    	</property>
+    	<property name="properties">
+    		<props>
+    			<prop key="111">只能是文字</prop>
+    			<prop key="222">Hello World!</prop>
+    		</props>
+    	</property>
+    </bean>
+    
+    <bean id="emp1" class="com.injectCollection.Employee">
+    	<property name="id" value="1"></property>
+    	<property name="name" value="北京"></property>
+    </bean>
+    
+    <bean id="emp2" class="com.injectCollection.Employee">
+    	<property name="id" value="2"></property>
+    	<property name="name" value="天津"></property>
+    </bean>
+</beans>

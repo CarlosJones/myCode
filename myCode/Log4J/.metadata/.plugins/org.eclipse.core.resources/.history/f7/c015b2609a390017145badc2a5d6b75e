@@ -1,0 +1,5 @@
+package com.simpleTest;
+
+public class Log4JUtils {
+
+}

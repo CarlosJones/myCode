@@ -1,0 +1,14 @@
+package com.project.model.serviceImpl;
+
+import com.project.model.pojo.User;
+import com.project.model.service.IUserService;
+
+@Service("userService")
+public class UserServiceImp implements IUserService {
+
+	public User getUserById(int userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

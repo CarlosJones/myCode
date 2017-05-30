@@ -1,0 +1,20 @@
+package com.weatherStation.Impl;
+
+import com.weatherStation.Interface.Observer;
+import com.weatherStation.Interface.Subject;
+
+public class WeatherData implements Subject {
+
+	public void registerObserver(Observer O) {
+
+	}
+
+	public void removeObserver(Observer O) {
+
+	}
+
+	public void notifyObservers(Observer O) {
+
+	}
+
+}

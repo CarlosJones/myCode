@@ -1,0 +1,12 @@
+1495108148498	Rename type 'ListenerDaoImpl'
+1495112641004	Extract interface 'IDoorListener'
+1495112692753	Copy compilation unit
+1495112744499	Rename type 'DoorSource'
+1495117468716	Encapsulate field 'action'
+1495118654945	Encapsulate field 'message'
+1495145194000	Rename resource 'Class.cld'
+1495145223492	Move 'test.cld' to 'UML'
+1495145251773	Rename resource 'newfile.cld'
+1495145344630	Rename resource 'newfile.cld'
+1495154800065	Delete element
+1495154803399	Delete element

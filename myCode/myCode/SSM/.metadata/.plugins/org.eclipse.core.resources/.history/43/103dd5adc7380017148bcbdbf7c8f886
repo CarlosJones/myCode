@@ -1,0 +1,22 @@
+package com.project.module.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.project.module.pojo.User;
+import com.project.module.service.IUserService;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+	private IUserService userService;
+	public String toIndex(HttpServletRequest request,Model model){
+		int userID = Integer.parseInt(request.getParameter("id"));
+		User user = this.userService.getUserById(userID);
+		model.addAttribute("user",user);
+		return "showUser";
+	}
+}

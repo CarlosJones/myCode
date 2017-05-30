@@ -1,0 +1,13 @@
+package com.learning.DAO;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.learning.Entities.Customer;
+import com.learning.Entities.Sales;
+
+@Repository
+public interface ISalesDao {
+	public Sales getByID(int ID);
+}

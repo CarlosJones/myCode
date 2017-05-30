@@ -1,0 +1,22 @@
+package com.event.door;
+
+import java.util.EventObject;
+
+public class DoorEvent extends EventObject {
+	
+	private String doorStatus = "";
+
+	public DoorEvent(Object source,String doorStatus) {
+		super(source);
+		this.doorStatus = doorStatus;
+	}
+
+	public String getDoorStatus() {
+		return doorStatus;
+	}
+
+	public void setDoorStatus(String doorStatus) {
+		this.doorStatus = doorStatus;
+	}
+
+}

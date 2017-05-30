@@ -1,0 +1,7 @@
+package com.event.door;
+
+import java.util.EventObject;
+
+public class DoorEvent extends EventObject {
+
+}

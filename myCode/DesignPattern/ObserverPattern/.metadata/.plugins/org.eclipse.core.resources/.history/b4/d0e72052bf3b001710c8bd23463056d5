@@ -1,0 +1,9 @@
+package com.event.test;
+
+import java.awt.Event;
+
+public interface ListenerDao {
+
+	public void demoEvent(Event event); 
+
+}

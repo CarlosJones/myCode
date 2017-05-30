@@ -1,0 +1,14 @@
+package com.mybatis.model;
+
+import java.util.List;
+
+public class Post {
+	private int id;  
+    private int blog_id;  
+    private int author_id;  
+    private Date created_on;  
+    private String section;  
+    private String subject;  
+    private String draft;  
+    private String body;
+}

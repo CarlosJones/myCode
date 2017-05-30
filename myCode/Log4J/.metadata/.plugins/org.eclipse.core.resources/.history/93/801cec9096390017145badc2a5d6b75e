@@ -1,0 +1,6 @@
+package com.simpleTest;
+
+
+public class LoggerTest {
+	private static Logger log = Logger.getLogger(Object.class);
+}

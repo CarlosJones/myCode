@@ -1,0 +1,26 @@
+package com.weatherStation.Impl;
+
+import com.weatherStation.Interface.Observer;
+import com.weatherStation.Interface.Subject;
+
+public class WeatherData implements Subject {
+
+	@Override
+	public void registerObserver(Observer O) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeObserver(Observer O) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void notifyObservers(Observer O) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

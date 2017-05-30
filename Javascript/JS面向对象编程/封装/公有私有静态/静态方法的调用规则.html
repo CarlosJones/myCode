@@ -1,0 +1,33 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(){}
+	User.age = 28;
+	User.myname = "月与海";
+	User.getName = function(){
+		return this.myname;
+	}
+	//垃圾用法
+	//var user = new User();
+	//静态方法无法调用公有属性，公有方法，私有属性，私有方法，
+	//特权方法和原型属性，只能调用静态属性，静态方法。
+	//静态类写成这样比较好,静态类可以作为工具类使用。
+	var user = {
+		init:function(myname,age){
+			this.myname = myname;
+			this.age = age;
+		},
+		getName:function(){
+			return this.myname;
+		}
+	}
+	user.init("大毛",2);
+	alert(user.getName());
+</script>
+</body>
+</html> 

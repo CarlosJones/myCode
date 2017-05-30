@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(name,age){
+		var name = name;//私有属性
+		var age = age;
+		this.getName = function(){
+			return name;
+		}
+	}
+	var user = new User("月与海",30);
+	alert(user.getName());
+	//类似于java里面pojo类，private属性，公有的setter和getter方法。
+</script>
+</body>
+</html> 

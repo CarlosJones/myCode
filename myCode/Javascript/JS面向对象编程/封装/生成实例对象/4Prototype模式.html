@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	//每一个构造函数都有一个prototype属性，
+	//指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。
+	//也就是说，一个类，要使用两个对象来构造。那么怎么处理继承呢？
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+	}
+	Cat.prototype.type = "猫科动物";//指向匿名对象
+	Cat.prototype.eat = function(){
+		alert("吃老鼠");
+	}
+	//生成实例
+	var cat1 = new Cat("大毛","黄色");
+	var cat2 = new Cat("二毛","黑色");
+	alert(cat1.type);
+	cat1.eat();
+	alert(cat1.eat == cat2.eat);
+	//减少内存消耗
+</script>
+</body>
+</html> 

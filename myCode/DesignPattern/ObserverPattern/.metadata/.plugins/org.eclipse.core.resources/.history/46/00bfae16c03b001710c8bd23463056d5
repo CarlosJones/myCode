@@ -1,0 +1,11 @@
+package com.event.test;
+
+public class ListenerDaoImpl2 implements ListenerDao {
+
+	@Override
+	public void demoEvent(MyEvent myEvent) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

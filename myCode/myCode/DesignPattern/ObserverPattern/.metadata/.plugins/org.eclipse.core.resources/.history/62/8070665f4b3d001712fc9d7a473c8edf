@@ -1,0 +1,25 @@
+package com.multithread.service;
+
+import com.activeobject.entity.WeatherData;
+
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:46:55
+ */
+public class ServiceThread implements Runnable {
+
+	public void run() {
+
+	}
+
+	public WeatherData getWeatherInfo(){
+		WeatherData wData = null;
+		System.out.println("WeatherService service...");
+		wData = new WeatherData();
+		wData.setTemperature("30");
+		wData.setHumidity("20");
+		wData.setPressure("50");
+		return wData;
+	}
+}

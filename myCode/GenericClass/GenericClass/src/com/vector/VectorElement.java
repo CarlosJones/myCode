@@ -1,0 +1,31 @@
+package com.vector;
+
+public class VectorElement<T> {
+	private VectorElement<T> next = null;
+	private VectorElement<T> previous = null;
+	private T data = null;
+	public VectorElement(){
+		
+	}
+	public VectorElement(T data){
+		this.data = data;
+	}
+	public VectorElement<T> getNext() {
+		return next;
+	}
+	public void setNext(VectorElement<T> next) {
+		this.next = next;
+	}
+	public VectorElement<T> getPrevious() {
+		return previous;
+	}
+	public void setPrevious(VectorElement<T> previous) {
+		this.previous = previous;
+	}
+	public T getData() {
+		return data;
+	}
+	public void setData(T data) {
+		this.data = data;
+	}
+}

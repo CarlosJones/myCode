@@ -1,0 +1,27 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var a = 3;
+	var b ={
+			name:"b",
+			value:3
+		};
+	var c = function(){
+		console.log("3");
+		};
+//	alert(new a);	//a is not a constructor
+//	alert(new b);   //b is not a constructor
+//	alert(new c);	//默认返回  "[object objectname]" .因此，小写的是方法返回的值的格式中默认的，大些的是对象的名字Object
+//	alert(new c());
+//	var d = new c();
+//	alert(d instanceof c);
+	alert((new c) instanceof c);
+//	从最后两次实验来看，new c 和 new c()没有区别，不知道什么原理。大概是c和c()函数【不是c()执行】等价吧。
+</script>
+</body>
+</html> 

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(){
+		this.myname = "月与海";
+		this.age = 28;
+		this.do = function(){
+			return this.myname+'学习js';
+		}
+	}
+	User.eat = function(food){
+		return "晚餐只有"+food;
+	}
+	User.prototype.alertAge = function(){
+		alert(this.age);
+	}
+	User.prototype.alertDo = function(){
+		alert(this.do());
+	}
+	User.prototype.alertEat = function(food){
+		alert(User.eat(food));
+	}
+	var user = new User();
+	user.alertAge();
+	user.alertDo();
+	user.alertEat("方便面");
+</script>
+</body>
+</html> 

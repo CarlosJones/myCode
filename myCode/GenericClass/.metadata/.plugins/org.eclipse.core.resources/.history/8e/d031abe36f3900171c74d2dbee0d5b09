@@ -1,0 +1,16 @@
+package com.box;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BoxTest {
+
+	@Test
+	public void test() {
+		Box<String> box = new Box<String>("Hello");
+		String data = box.getData();
+		assertEquals("Box的结果出错", "Hello",data);
+	}
+
+}

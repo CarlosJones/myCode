@@ -1,0 +1,20 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(name,age){
+		this.name = name;//公有属性
+		this.age = age;
+	}
+	User.prototype.getName = function(){	//公有方法
+		return this.name;
+	}
+	var user = new User("月与海",30);
+	alert(user.getName());
+</script>
+</body>
+</html> 

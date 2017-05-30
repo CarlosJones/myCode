@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.learning.DAO.ISalesDao">
+	<resultMap id="ISalesMapper" type="com.learning.Entities.Sales">
+		<id property="salesID" column="sales_id"></id>
+		<result property="salesName" column="sales_name"></result>
+		<result property="phone" column="sales_phone"></result>
+		<result property="fax" column="fax"></result>
+		<result property="email" column="email"></result>
+		<association property="userInfo" column="user_id" javaType="com.learning.Entities.User"
+			select="selectUser">
+		</association>
+	</resultMap>
+	<select id="getByID" parameterType="int" resultMap="ISalesMapper">
+		select * from salesman where sales_id=#{id}
+	</select>
+</mapper>

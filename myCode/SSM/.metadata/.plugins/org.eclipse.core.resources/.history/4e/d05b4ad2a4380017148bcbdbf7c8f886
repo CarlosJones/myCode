@@ -1,0 +1,10 @@
+package com.project.model.dao;
+
+import org.springframework.stereotype.Component;
+
+import com.project.model.pojo.User;
+
+@Component
+public interface IUserDao {
+	public User selectByPrimaryKey(int id);
+}

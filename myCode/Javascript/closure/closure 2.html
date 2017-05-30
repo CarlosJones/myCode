@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var name = "The Window";
+	var obj = {
+		name:"My Object",
+	 getNameFunc:function(){
+		var that = this;
+		return function(){
+			return that.name;
+		}
+		}
+	}
+	alert(obj.getNameFunc()());
+</script>
+</body>
+</html> 

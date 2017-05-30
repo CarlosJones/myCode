@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/home/dingf/myCode/spring/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3420608906.index
+2419158582.index
+3184311797.index
+1348906700.index
+2631668509.index
+2719786441.index

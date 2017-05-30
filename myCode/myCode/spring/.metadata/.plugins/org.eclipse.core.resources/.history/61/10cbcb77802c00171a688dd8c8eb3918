@@ -1,0 +1,5 @@
+package com.springCustomEvent;
+
+public class CustomEvent {
+
+}

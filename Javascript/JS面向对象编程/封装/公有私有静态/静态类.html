@@ -1,0 +1,23 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var user = {
+		init:function(name,age){
+			this.name = name;
+			this.age = age;
+		},
+		getName:function(){
+			return this.name		
+		}
+	}
+	user.init("月与海",28);
+	alert(user.getName());
+	//最原始的类的形式，用来定义静态类很适合。
+</script>
+</body>
+</html> 

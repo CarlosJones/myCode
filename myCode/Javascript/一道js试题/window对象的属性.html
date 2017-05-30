@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	//全局变量都是window对象的属性
+	var getName = function(){
+		alert(4);
+	};
+	var prop = "是window对象的属性";
+	//验证
+	window.getName();
+	alert(window.prop);
+	//getName对象信息
+	alert(getName);
+	alert(getName.prototype);
+</script>
+</body>
+</html> 

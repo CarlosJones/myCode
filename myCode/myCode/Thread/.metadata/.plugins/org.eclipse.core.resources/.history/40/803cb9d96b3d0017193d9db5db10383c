@@ -1,0 +1,9 @@
+package com.simpleTest;
+
+public class DoSomething implements Runnable{
+
+	public void run() {
+		
+	}
+
+}

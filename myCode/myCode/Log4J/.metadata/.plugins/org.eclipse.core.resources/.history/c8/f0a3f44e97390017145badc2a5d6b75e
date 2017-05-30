@@ -1,0 +1,11 @@
+package com.simpleTest;
+
+import org.apache.log4j.Logger;
+
+public class LoggerTest {
+	private static Logger log = Logger.getLogger(Object.class);
+	PropertyConfigurator.configure("myLog4j.properties");
+	public static void main(String[] args) {
+		log.debug("HelloWorld");
+	}
+}

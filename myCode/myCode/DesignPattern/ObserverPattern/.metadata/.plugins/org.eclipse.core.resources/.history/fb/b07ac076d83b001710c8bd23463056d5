@@ -1,0 +1,19 @@
+package com.event.button;
+
+public class Event {
+	private String action;
+	private String message;
+	
+	public Event(String action,String message){
+		this.setAction(action);
+		this.message = message;
+	}
+
+	public String getAction() {
+		return action;
+	}
+
+	public void setAction(String action) {
+		this.action = action;
+	}
+}

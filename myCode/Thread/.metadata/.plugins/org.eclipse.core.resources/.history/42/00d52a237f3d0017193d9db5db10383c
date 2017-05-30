@@ -1,0 +1,5 @@
+package com.simpleTest;
+
+public class Counter {
+	public int i;
+}

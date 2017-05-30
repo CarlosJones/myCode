@@ -1,0 +1,28 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	//实际应用中，使用大量的私有变量，私有方法
+	function User(girlfriend){
+		var girlfriend = girlfriend;
+		this.myname = "aaa";
+		this.age = 12;
+		function getGirlfriend(){
+			alert(this);//[object Window]
+			return this.myname = "bbb";//因为getGirlfriend()作用域中没有声明myname,myname自动到window上声明。
+		}
+		this.alertGirlfriend = function(){
+			getGirlfriend();
+			alert(this.myname);
+		}
+	}
+	var user = new User("abc");
+	user.alertGirlfriend();
+	alert(myname);
+</script>
+</body>
+</html> 

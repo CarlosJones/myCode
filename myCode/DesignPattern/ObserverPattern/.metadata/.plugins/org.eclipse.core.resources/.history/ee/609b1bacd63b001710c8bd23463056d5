@@ -1,0 +1,10 @@
+package com.event.button;
+
+public class clickHandler implements IEventListener {
+
+	@Override
+	public void handleEvent(Event e) {
+
+	}
+
+}

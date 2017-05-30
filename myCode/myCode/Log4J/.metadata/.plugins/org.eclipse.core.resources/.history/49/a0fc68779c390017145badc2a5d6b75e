@@ -1,0 +1,7 @@
+package com.simpleTest;
+
+import org.apache.log4j.Logger;
+
+public class Log4JUtils {
+	private static Logger logger = null;
+}

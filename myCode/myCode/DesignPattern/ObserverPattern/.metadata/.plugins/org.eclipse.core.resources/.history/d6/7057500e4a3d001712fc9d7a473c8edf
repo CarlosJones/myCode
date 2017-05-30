@@ -1,0 +1,9 @@
+package com.multithread.service;
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:45:56
+ */
+public class QueryServiceThread {
+
+}

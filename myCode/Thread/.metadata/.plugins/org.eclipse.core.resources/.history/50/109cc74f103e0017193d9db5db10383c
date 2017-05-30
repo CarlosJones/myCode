@@ -1,0 +1,5 @@
+package com.waitandnotify;
+
+public class ThreadA {
+	ThreadB b = new ThreadB();
+}

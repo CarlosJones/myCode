@@ -1,0 +1,6 @@
+package com.activeobject.entity;
+
+public class WeatherData {
+	private String temperature;
+	
+}

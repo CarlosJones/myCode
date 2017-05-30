@@ -1,0 +1,7 @@
+package com.learning.DAO;
+
+import com.learning.Entities.Sales;
+
+public interface ISalesDao {
+	public Sales getByID(int ID);
+}

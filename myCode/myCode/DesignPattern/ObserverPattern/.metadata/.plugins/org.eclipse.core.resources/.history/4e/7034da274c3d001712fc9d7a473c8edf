@@ -1,0 +1,9 @@
+package com.multithread.client;
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月20日下午6:58:55
+ */
+public class WeatherClient {
+
+}

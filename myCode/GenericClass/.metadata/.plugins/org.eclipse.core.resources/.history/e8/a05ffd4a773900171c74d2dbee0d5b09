@@ -1,0 +1,9 @@
+package com.map;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Map<Key, Value> {
+	private List<MapElement<Key,Value>> list = new ArrayList<MapElement<Key,Value>>();
+	
+}

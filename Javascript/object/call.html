@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function Class1(){
+		this.name="class1";
+		this.showName= function(){
+			alert(this.name);
+		}
+	}
+	function Class2(){
+		this.name="class2";
+	}
+
+	var c1 = new Class1();
+	var c2 = new Class2();
+	c1.showName.call(c2);
+</script>
+</body>
+</html> 

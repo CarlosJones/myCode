@@ -1,0 +1,5 @@
+package com.event.button;
+
+public interface IEventListener {
+
+}

@@ -1,0 +1,10 @@
+package com.putOnTheLight;
+
+public class LightOnCommand implements Command{
+	private Light light;
+
+	public void execute() {
+		
+	}
+
+}

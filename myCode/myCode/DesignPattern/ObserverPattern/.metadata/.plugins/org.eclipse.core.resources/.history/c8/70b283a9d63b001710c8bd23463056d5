@@ -1,0 +1,11 @@
+package com.event.button;
+
+public class doubleClickHandler implements IEventListener {
+
+	@Override
+	public void handleEvent(Event e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.event.test;
+
+public class TestDemo {
+	public static void main(String[] args) {
+		try{
+			EventSource eventSource = new EventSource();
+			ListenerDaoImpl1 listener1 = new ListenerDaoImpl1();
+			ListenerDaoImpl2 listener2 = new ListenerDaoImpl2();
+			eventSource.addListener(listener1);
+			eventSource.addListener(listener2);
+			
+		}catch(Exception e){
+			
+		}
+	}
+}

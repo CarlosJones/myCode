@@ -1,0 +1,34 @@
+<!doctype>
+
+<html>
+	<head>
+		<title>JS把函数作为另一函数的参数</title>
+		<meta charset='utf-8' />
+		<script>
+			//无参数
+			function test1(){
+				return '不带参数的函数'
+			}
+			//有参数
+			function test2(str){
+				return '带参数的函数         参数为:'  + str;
+			}
+			function test3(fn){
+				var result = null;
+				if(typeof(fn) === 'function'){//不带参数的函数
+					result = fn();
+				}
+				else if(typeof(fn) === 'string'){//带参数的函数
+					result = fn;
+				}
+				return result;
+			}
+			window.onload = function(){
+				alert(test3(test1));
+				alert(test3(test2('我是参数')));
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

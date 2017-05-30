@@ -1,0 +1,5 @@
+package com.map;
+
+public class Map<Key, Value> {
+	List<MapElement<Key,Value>> list = new ArrayList<MapElement<Key,Value>>();) 
+}

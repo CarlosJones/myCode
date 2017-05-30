@@ -1,0 +1,10 @@
+package com.springEvent;
+
+import org.springframework.context.ApplicationListener;
+
+public class ContextStartEventHandler 
+	implements ApplicationListener<ContextStartedEvent>{
+	public static void main(String[] args) {
+		
+	}
+}

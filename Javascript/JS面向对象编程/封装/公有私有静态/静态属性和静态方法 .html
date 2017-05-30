@@ -1,0 +1,23 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function User(){}
+	User.age = "28";
+	User.myname = "月与海";
+	User.name = "AAA";	//此处的name应该是JS内置字段，不能重新赋值，原理未知。
+	User.getMyName = function(){
+		return this.myname;
+	}
+	User.getName = function(){
+		return this.name;
+	}
+	alert(User.getMyName());
+	alert(User.getName());
+</script>
+</body>
+</html> 

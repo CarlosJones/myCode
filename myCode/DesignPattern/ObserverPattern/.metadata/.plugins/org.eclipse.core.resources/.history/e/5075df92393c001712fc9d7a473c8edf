@@ -1,0 +1,10 @@
+package com.activeobject.service;
+
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月19日上午10:16:26
+ */
+public class WeatherService {
+	public static 
+}

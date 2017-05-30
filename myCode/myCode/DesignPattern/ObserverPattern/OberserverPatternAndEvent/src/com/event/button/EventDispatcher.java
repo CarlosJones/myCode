@@ -1,0 +1,37 @@
+package com.event.button;
+
+import java.util.HashMap;
+
+public class EventDispatcher {
+	private static EventDispatcher eventDispatcher;
+	private HashMap<String,IEventListener> hashMap = new HashMap<String,IEventListener>();
+	//单例
+	private EventDispatcher(){}
+	
+	public static synchronized EventDispatcher getInstance(){
+		if(eventDispatcher == null)
+			eventDispatcher = new EventDispatcher();
+		return eventDispatcher;
+	}
+	
+	public void addEventListener(String event,IEventListener eventListener)
+		throws EventAlreadyRegisteredException{
+		if(hashMap.get(event)!= null)
+			throw new EventAlreadyRegisteredException();
+		hashMap.put(event, eventListener);
+	}
+	
+	public void dispatchEvent(Event e) throws UnkownEventException{
+		IEventListener listener = hashMap.get(e.getAction());
+		if(listener == null)
+			throw new UnkownEventException();
+		listener.handleEvent(e);
+	}
+	public void removeEventListener(String event){
+		hashMap.remove(event);
+	}
+	
+	public void removeAllEventListener(){
+		hashMap.clear();
+	}
+}

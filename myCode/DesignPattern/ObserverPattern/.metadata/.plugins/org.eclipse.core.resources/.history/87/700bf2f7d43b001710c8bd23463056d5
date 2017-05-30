@@ -1,0 +1,13 @@
+package com.event.button;
+
+public class EventDispatcher {
+	private static EventDispatcher eventDispatcher;
+	//单例
+	private EventDispatcher(){}
+	
+	public static synchronized EventDispatcher getInstance(){
+		if(eventDispatcher == null)
+			eventDispatcher = new EventDispatcher();
+		return eventDispatcher;
+	}
+}

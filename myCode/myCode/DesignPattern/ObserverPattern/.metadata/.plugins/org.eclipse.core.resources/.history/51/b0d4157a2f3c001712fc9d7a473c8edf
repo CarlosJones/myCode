@@ -1,0 +1,16 @@
+package com.weatherStation.Impl;
+
+import com.weatherStation.Interface.DisplayElement;
+import com.weatherStation.Interface.Observer;
+
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
+
+	public void display() {
+
+	}
+
+	public void update(float temp, float humidity, float pressure) {
+
+	}
+
+}

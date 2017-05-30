@@ -1,0 +1,13 @@
+package com.simpleTest;
+
+import org.junit.Test;
+
+public class DoSomethingTest {
+
+	@Test
+	public void NoSynchronizedtest() {
+		DoSomething ds = new DoSomething("张三");
+		
+	}
+
+}

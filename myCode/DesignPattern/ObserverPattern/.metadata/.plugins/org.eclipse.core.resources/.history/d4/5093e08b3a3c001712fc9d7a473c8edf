@@ -1,0 +1,24 @@
+package com.activeobject.service;
+
+import com.activeobject.entity.WeatherData;
+
+/**
+ *@Description:TODO 
+ *@author:Carlos
+ *@time:2017年5月19日上午10:16:26
+ */
+public class WeatherService {
+	public static WeatherData getWeatherInfo(){
+		WeatherData wData = null;
+		 try {
+			Thread.sleep(5*1000);
+			wData = new WeatherData();
+			wData.setTemperature("30");
+			wData.setHumidity("20");
+			wData.setPressure("50");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return wData;
+	}
+}

@@ -1,0 +1,14 @@
+package com.simpleTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DoSomethingTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
